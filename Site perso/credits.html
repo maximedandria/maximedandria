@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Maxime - Credits</title>
+	<link rel="stylesheet" type="text/css" href="css/style_credits.css" />
+
+	<script src="https://kit.fontawesome.com/275ad3a481.js" crossorigin="anonymous"></script>
+	<script src="js/transition.js"></script>
+
+</head>
+
+<body>
+    <div class="transition transition is-active"></div>
+
+    <header class="header">
+		<p class="header-title">Maxime - Credits
+    </header>
+
+    <nav class="navbar">
+		<ul class="navbar-menu">
+			<li class="navbar-item">
+				<div class="navbar-link navbar-title">Menu</div>
+				<div id="nav-title"><i class="fas fa-chevron-right navbar-icon fa-lg logo"></i></div></div>
+			</li>
+			<li class="navbar-item">
+				<a href="accueil.html" class="fas fa-home fa-lg navbar-icon"></a>
+				<a href="accueil.html" class="navbar-link">Accueil</a>
+			</li>
+			<li class="navbar-item ">
+				<a href="documentation.html" class="fas fa-folder fa-lg navbar-icon"></a>
+				<a href="documentation.html" class="navbar-link">Mon CV</a>
+			</li>
+			<li class="navbar-item ">
+				<a href="credits.html" class="fas fa-address-card fa-lg navbar-icon"></a>
+				<a href="credits.html" class="navbar-link">Credits</a>
+			</li>
+			<li class="navbar-item ">
+				<a href="index.html" class="fas fa-sign-out-alt fa-lg navbar-icon"></a>
+				<a href="index.html" class="navbar-link">Quitter</a>
+			</li>
+		</ul>
+	</nav>
+
+    <div class="container">
+        <div class="card">
+            <div class ="content">
+                <h3>Maxime D'ANDRIA</h3>
+                <p>Bac pro SN <br>Option RISC</p>
+                <button href id="tidic">Voir Plus</button>
+            </div>
+        </div>
+        <div class ="card">
+            <div class ="content">
+                <h3>Lycée: </h3>
+                <p>Lasalle Avignon <br><br> 9 rue Notre-Dame des 7 Douleurs, 84000 AVIGNON</p>
+                <button href id="youko">Voir plus</button>
+            </div>
+        </div>
+        <div class ="card">
+            <div class ="content">
+                <h3>Sources</h3>
+                <p>Cliquez pour voir</p>
+                <button href="#" id="sources">Voir Plus</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- POPUP -->
+    <div class="popup-bg" id="sources-popupBg"></div>
+    <div class="popup" id="sources-popup">
+        <div class="popup-header">
+            <h3 align="center">Sources</h3>
+            <i class="fas fa-times close" id="sources-close"></i>
+        </div>
+        <div class="popup-divider"></div>
+        <div class="popup-content">
+            <p>Cartes qui bougent: <a href="https://gijsroge.github.io/tilt.js/">tilt.js</a></p>
+            <p>Popup modals: <a href="https://www.w3schools.com/howto/howto_css_modals.asp">w3schools.com</a></p>
+            <p>Navbar: <a href="https://youtu.be/0IDsPpVLgxI">youtube.com: Wawa Sensei</a></p>
+            <p>Page transition: <a href="https://youtu.be/ckJ7gdIeebc">youtube.com: Tyler Potts</a></p>
+
+        </div>
+    </div>
+
+
+    <div class="popup-bg" id="tidic-popupBg"></div>
+    <div class="popup" id="tidic-popup">
+        <div class="popup-header">
+            <h3 align="center">Définitions</h3>
+            <i class="fas fa-times close" id="tidic-close"></i>
+        </div>
+        <div class="popup-divider"></div>
+      Bac pro SN = Bac professionnel Système numérique
+			<br>
+			RISC = Réseaux informatiques et systèmes communicants
+    </div>
+
+
+    <div class="popup-bg" id="youko-popupBg"></div>
+    <div class="popup" id="youko-popup">
+        <div class="popup-header">
+            <h3 align="center">Remerciements</h3>
+            <i class="fas fa-times close" id="youko-close"></i>
+        </div>
+        <div class="popup-divider"></div>
+        <div class="popup-content">
+					<a href="https://lasalle84.net/">Site du lycée Lasalle</a>
+
+        </div>
+			</div>
+
+			<footer class="footer">
+						<p>D'ANDRIA Maxime 02/10/2022  Copyright © 2022 D'ANDRIA MAXIME</p>
+			</footer>
+
+
+
+    <audio src="resources/musics/readmore.weba"></audio>
+
+
+    <!-- Scripts -->
+
+
+	<script src="js/main.js"></script>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+		    max: 25,
+		    speed: 2500,
+            reverse: true,
+            glare: true,
+            "max-glare": 0.2,
+	  });
+    </script>
+</body>
